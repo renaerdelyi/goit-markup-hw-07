@@ -131,6 +131,9 @@ body {
 .header-section__tel {
   color: var(--grey);
 }
+.js-menu-container {
+  display: none;
+}
 
 /*stilizare pentru hero section*/
 .hero-section .container {
@@ -585,7 +588,8 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1158px;
+  width: 100%;
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -784,4 +788,112 @@ body {
   text-align: center;
   border-radius: 4px;
   margin: 0 auto;
+}
+/* @media screen and (min-width: 428px) and(max-width:768px) {
+  .js-open-menu {
+    display: none;
+  }
+} */
+
+/* */
+
+/* 
+@media screen and (max-width: 768px) {
+  .js-open-menu {
+    display: block;
+  }
+} */
+
+/* @media screen and (max-width: 1158px) {
+  .js-open-menu {
+    display: block;
+  }
+} */
+/* .js-menu-container {
+  display: none;
+} */
+.js-open-menu {
+  background-color: var(--white);
+  border: none;
+  cursor: pointer;
+  display: none;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+.js-open-menu:hover,
+.js-open-menu:hover:focus {
+  fill: var(--blue);
+}
+.js-open__svg {
+  width: 40px;
+  height: 40px;
+}
+.is-open {
+  display: block;
+}
+
+.js-close-menu {
+  border: none;
+  background-color: var(--white);
+  display: flex;
+  justify-content: flex-end;
+  /* margin-top: 10px;
+  margin-right: 15px; */
+}
+@media screen and (max-width: 768px) {
+  .js-open-menu {
+    display: block;
+  }
+  .header-section__nav,
+  .header-section__contacts {
+    display: none;
+  }
+
+  .about-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .we-do-cards .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .our-team-img .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .regular__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-section__1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-section__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-section__subtitle {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-section__subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Studio</title>
     <link
       rel="stylesheet"
@@ -53,8 +54,36 @@
             +1 212-772-4150</a
           >
         </div>
+        <button
+          class="js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="js-open__svg">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-menu_40px" />
+          </svg>
+        </button>
+        <div class="js-menu-container">
+          <button class="js-close-menu">x</button>
+          <p>
+            <a href="index.html" class="active">Studio</a>
+          </p>
+          <p><a href="#">Portfolio</a></p>
+          <p><a href="">Contacts</a></p>
+          <a class="header-section__tel" href="tel:++1212-772-4150"
+            >+1 212-772-4150</a
+          >
+          <a class="header-section__mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <p><a href="">Instagram</a></p>
+          <p><a href="">Twitter</a></p>
+          <p><a href="">Facebook</a></p>
+          <p><a href="">Linkedin</a></p>
+        </div>
       </div>
     </header>
+
     <!--portiunea principala a paginii web-->
     <main>
       <!--hero section-->
@@ -540,6 +569,7 @@
         </form>
       </div>
     </div>
-    <script src="./modal.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

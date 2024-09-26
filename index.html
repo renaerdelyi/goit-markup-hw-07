@@ -22,12 +22,13 @@
   </head>
   <body>
     <!--header section-->
+
     <header class="header-section">
       <div class="container">
         <div>
-          <a class="logo" href="#"
-            ><p><span class="span">Web</span>Studio</p></a
-          >
+          <a class="logo" href="#">
+            <p><span class="span">Web</span>Studio</p>
+          </a>
         </div>
         <nav class="header-section__nav">
           <ul class="header-section__nav-links">
@@ -44,45 +45,48 @@
           <a class="header-section__mail" href="mailto:info@devstudio.com">
             <svg class="header-section__icon-mail">
               <use href="./images/icons.svg/symbol-defs.svg#icon-envelope" />
-            </svg>
-            info@devstudio.com</a
-          >
+            </svg>info@devstudio.com
+          </a>
           <a class="header-section__tel" href="tel:++1212-772-4150">
             <svg class="header-section__icon-tel">
-              <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone" />
+              <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"/>
+            </svg> +1 212-772-4150
+          </a>
+        </div>
+      </div> 
+          <button
+        class="js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+            <svg class="js-open__svg">
+              <use href="./images/icons.svg/symbol-defs.svg#icon-menu_40px"/>
             </svg>
-            +1 212-772-4150</a
-          >
-        </div>
-        <button
-          class="js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="js-open__svg">
-            <use href="./images/icons.svg/symbol-defs.svg#icon-menu_40px" />
-          </svg>
-        </button>
-        <div class="js-menu-container">
-          <button class="js-close-menu">x</button>
-          <p>
-            <a href="index.html" class="active">Studio</a>
-          </p>
-          <p><a href="#">Portfolio</a></p>
-          <p><a href="">Contacts</a></p>
-          <a class="header-section__tel" href="tel:++1212-772-4150"
-            >+1 212-772-4150</a
-          >
-          <a class="header-section__mail" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <p><a href="">Instagram</a></p>
-          <p><a href="">Twitter</a></p>
-          <p><a href="">Facebook</a></p>
-          <p><a href="">Linkedin</a></p>
-        </div>
-      </div>
+          </button> 
+
+          <div class="js-menu-container is-open">
+            <button class="js-close-menu">x</button>
+              <div class="js-menu-navigation">
+                <p><a href="index.html" class="active">Studio</a></p>
+                <p><a href="portfolio.html">Portfolio</a></p>
+                <p><a href="#">Contacts</a></p>
+              </div>
+              <div class="js-menu__contact">
+                <a class="header-section__tel js-tel" href="tel:++1212-772-4150"
+                  >+1 212-772-4150
+                </a>
+                <a class="header-section__mail js-mail" href="mailto:info@devstudio.com"> info@devstudio.com   
+                </a>
+              </div>
+              <div class="js-menu__media">
+                <p><a href="">Instagram</a></p>
+                <p><a href="">Twitter</a></p>
+                <p><a href="">Facebook</a></p>
+                <p><a href="">Linkedin</a></p>
+              </div>
+            </div>
+
     </header>
+      
 
     <!--portiunea principala a paginii web-->
     <main>
@@ -92,6 +96,7 @@
           <h1 class="hero-section__title">
             EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS
           </h1>
+
           <button data-modal-open class="hero-section__btn">
             Request our service
           </button>
@@ -418,6 +423,7 @@
     <!--footer section-->
     <footer class="footer-section">
       <div class="container">
+        <div class="footer">
         <div class="footer-section__1">
           <a class="logo-footer" href="#">
             <p class="logo-footer"><span class="span-logo">Web</span>Studio</p>
@@ -481,6 +487,7 @@
             </li>
           </ul>
         </div>
+      </div>
 
         <div class="footer-section__form">
           <h2 class="footer-section__subtitle">SUBSCRIBE TO THE NEWSLETTER</h2>
@@ -515,7 +522,7 @@
         <form name="modal-form" class="modal-form">
           <label class="modal-form__position"
             >Name
-            <input type="text" name="username" class="modal-form__input" />
+            <input type="text" name="username" class="modal-form__input"/>
             <svg>
               <use
                 href="./images/form-icons.svg/./symbol-defs.svg#icon-person-black-18dp-1"

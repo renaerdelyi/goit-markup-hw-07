@@ -1213,7 +1213,12 @@ display: block;
 }
 
 @media screen and (min-width: 1158px) {
- .js-open-menu{
+ 
+  .js-open-menu{
+  display: none;
+ }
+
+ .js-menu-container{
   display: none;
  }
 }
